@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
@@ -28,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
@@ -40,9 +39,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       minify: true
-    }),
-    new MiniCssExtractPlugin({
-      filename: "assets/css/[name].[contenthash].css"
     }),
     new Dotenv({ systemvars: true }),
     new ForkTsCheckerWebpackPlugin()
