@@ -60,7 +60,8 @@ function RecipesList({ recipes }: { recipes: Recipe[] }) {
 }
 
 export default function App() {
-  const [ingredients, setIngredients] = useState<string[]>([]);
+  return <h1>Hello React!</h1>;
+  /* const [ingredients, setIngredients] = useState<string[]>([]);
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -124,5 +125,5 @@ export default function App() {
         </Routes>
     </Router>
     </FavoritesProvider>
-  );
+  ); */
 }
