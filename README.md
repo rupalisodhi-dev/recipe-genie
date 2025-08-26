@@ -7,7 +7,7 @@ Recipe Genie is a web application designed to help you make the most of the ingr
 ## Live Demo
 
 Check out Recipe Genie live here:  
-[🔗 Recipe Genie](https://recipe-genie-one.vercel.app/)
+[Recipe Genie](https://recipe-genie-one.vercel.app/)
 
 ---
 
