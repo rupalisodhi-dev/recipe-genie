@@ -72,8 +72,8 @@ export default function App() {
       }
 
       setLoading(true);
-      //const data = await fetchRecipes(ingredients);
-      //setRecipes(data);
+      const data = await fetchRecipes(ingredients);
+      setRecipes(data);
       setLoading(false);
     };
 

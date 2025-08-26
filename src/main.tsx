@@ -15,4 +15,3 @@ createRoot(rootElement ).render(
       </FavoritesProvider>
     </React.StrictMode>
   );
-
